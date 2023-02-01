@@ -9,6 +9,9 @@
     "sourceType": "module"
   },
   "rules": {
+    "prettier/prettier": ["error",{
+      "endOfLine": "auto"}
+    ],
     "no-console": "off",
     "no-restricted-syntax": [
       "error",
