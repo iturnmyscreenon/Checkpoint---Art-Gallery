@@ -14,19 +14,21 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div className="navleft" id={showLinks ? "open" : "close"}>
-        <img src={logoskonbarb} alt="skonbarb" />
+        <img src={logoskonbarb} alt="skonbarb" className="logo" />
+
         <div className="hiddenLinks">
           <Link to="/"> Home </Link>
+          <Link to="/gallery"> Gallery </Link>
           <Link to="/about"> About </Link>
           <Link to="/contact"> Contact </Link>
-          <Link to="/gallery"> Gallery </Link>
         </div>
       </div>
       <div className="navright">
         <Link to="/"> Home </Link>
+        <Link to="/gallery"> Gallery </Link>
         <Link to="/about"> About </Link>
         <Link to="/contact"> Contact </Link>
-        <Link to="/gallery"> Gallery </Link>
+
         <button className="navbtn" type="button" onClick={toggleLinks}>
           <ReorderIcon />
         </button>
