@@ -5,12 +5,9 @@ import "../styles/Homepage.css";
 
 export default function Homepage() {
   return (
-    <div className="home">
-      <div
-        className="headerContainer"
-        style={{ backgroundImage: `url(${BackGround})`, height: "100%" }}
-      >
-        <h1>SKONBARB GALLERY</h1>
+    <div className="home" style={{ backgroundImage: `url(${BackGround})` }}>
+      <div className="headerContainer">
+        <h1>Skonbarb Gallery</h1>
         <p>Art Travel</p>
         <Link to="/gallery">
           <button type="button">GO TO GALLERY</button>
