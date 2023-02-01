@@ -14,7 +14,8 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div className="navleft" id={showLinks ? "open" : "close"}>
-        <img src={logoskonbarb} alt="skonbarb" />
+        <img src={logoskonbarb} alt="skonbarb" className="logo" />
+
         <div className="hiddenLinks">
           <Link to="/"> Home </Link>
           <Link to="/about"> About </Link>
