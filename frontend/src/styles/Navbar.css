@@ -86,13 +86,13 @@
     padding-right: 50px;
   }
 
-  .navbar .rightSide button {
+  .navbar .navright button {
     display: inherit;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .navbar .rightSide button {
+  .navbar .navright button {
     display: none;
   }
 
