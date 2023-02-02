@@ -1,5 +1,20 @@
 .ArtList {
   display: grid;
-  grid-template:1fr 1fr 1fr / 1fr 1fr 1fr;
+  grid-template:1fr 1fr  / 1fr 1fr 1fr;
   grid-gap: 20px;
 }
+
+@media screen and (max-width: 1000px) {
+  .ArtList {
+    grid-template:1fr 1fr 1fr 1fr 1fr 1fr  / 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .ArtList {
+    display: flex;
+    flex-direction: column;
+  }
+}
+  
+  
