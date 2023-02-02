@@ -1,7 +1,12 @@
 ## Concept
 
-This template is meant to serve as a foundation for every P2/P3 following the React-Express-MySQL stack, as learned in Wild Code School.
-It's pre-configured with a set of tools which'll help students produce industry-quality and easier-to-maintain code, while staying as simple as possible to use.
+Our online art gallery aims to provide an accessible platform for art lovers worldwide to discover and purchase works from talented artists. We believe that art should be accessible to everyone and our platform is designed to facilitate this discovery by offering a simple and intuitive user experience.
+
+## Project
+
+The online art gallery project is developed in React JS to offer a fast and smooth experience for users. The platform is designed to be easy to use and navigate, with a clear and attractive interface
+
+for displaying art works. Users can easily browse through different art categories, perform searches, and add works to their shopping cart with just a few clicks.
 
 ## Setup & Use
 
