@@ -1,12 +1,16 @@
 import React from "react";
+import { PropTypes } from "prop-types";
 import { Link } from "react-router-dom";
+// eslint-disable-next-line import/no-unresolved
+import { useAutoAnimate } from "@formkit/auto-animate/react";
 import Card from "react-bootstrap/Card";
 import SampleCard from "../helpers/sampleCard";
 import "../styles/ArtCard.css";
 
-export default function Artcard({ art }) {
+export default function Artcard({ art, full }) {
+  const [parent] = useAutoAnimate();
   return (
-    <Card className="artcard" style={{ width: "18rem" }}>
+    <Card ref={parent} className="artcard" style={{ maxWidth: "300px" }}>
       <Link to={`/gallery/artcard/${art.id}`}>
         <Card.Img src={art.image} alt="painting" />
       </Link>
@@ -24,7 +28,7 @@ export default function Artcard({ art }) {
         <Card.Text
           style={{ color: "grey", fontStyle: "italic", fontSize: "20px" }}
         >
-          {art.description?.substring(0, 99)}...
+          {full ? art.description : `${art.description?.substring(0, 99)}...`}
         </Card.Text>
         <Card.Text style={{ fontStyle: "italic", color: "#6c757d" }}>
           {art.price}$
@@ -36,8 +40,10 @@ export default function Artcard({ art }) {
 
 Artcard.defaultProps = {
   art: { id: 0, image: "", name: "", description: "", price: 0 },
+  full: false,
 };
 
 Artcard.propTypes = {
   art: SampleCard,
+  full: PropTypes.bool,
 };
