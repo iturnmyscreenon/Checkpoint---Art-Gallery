@@ -1,20 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Card from "react-bootstrap/Card";
 import SampleCard from "../helpers/sampleCard";
 import "../styles/ArtCard.css";
 
 export default function Artcard({ art }) {
   return (
-    <div className="artcard">
+    <Card className="artcard" style={{ width: "18rem" }}>
       <Link to={`/gallery/artcard/${art.id}`}>
-        <img src={art.image} alt="painting" w />
+        <Card.Img src={art.image} alt="painting" />
       </Link>
-      <div className="artcardInfo">
-        <h3>{art.name}</h3>
-        <p>{art.description}</p>
-        <p>{art.price}</p>
-      </div>
-    </div>
+      <Card.Body className="artcardInfo d-flex flex-column">
+        <Card.Title
+          style={{
+            fontSize: "30px",
+            fontStyle: "bold",
+            fontFamily: "georgia, serif",
+            color: "rgb(114, 71, 14)",
+          }}
+        >
+          {art.name}
+        </Card.Title>
+
+        <Card.Text
+          style={{ color: "grey", fontStyle: "italic", fontSize: "20px" }}
+        >
+          {art.description.substring(0, 99)}...
+        </Card.Text>
+        <Card.Text style={{ fontStyle: "italic", color: "#6c757d" }}>
+          {art.price}$
+        </Card.Text>
+      </Card.Body>
+    </Card>
   );
 }
 
