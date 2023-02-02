@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import SampleCard from "../helpers/sampleCard";
-import "../styles/Artcard.css";
+import "../styles/ArtCard.css";
 
 export default function Artcard({ art }) {
   return (
     <div className="artcard">
-      <Link to={`/artcard/${art.id}`}>
+      <Link to={`/gallery/artcard/${art.id}`}>
         <img src={art.image} alt="painting" w />
       </Link>
       <div className="artcardInfo">
