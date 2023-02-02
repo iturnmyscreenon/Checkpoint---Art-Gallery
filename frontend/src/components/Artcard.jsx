@@ -21,11 +21,10 @@ export default function Artcard({ art }) {
         >
           {art.name}
         </Card.Title>
-
         <Card.Text
           style={{ color: "grey", fontStyle: "italic", fontSize: "20px" }}
         >
-          {art.description.substring(0, 99)}...
+          {art.description?.substring(0, 99)}...
         </Card.Text>
         <Card.Text style={{ fontStyle: "italic", color: "#6c757d" }}>
           {art.price}$
