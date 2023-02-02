@@ -1,12 +1,13 @@
 .artcard {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  max-width: 300px;
-  max-height: 400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 20px;
 }
 
 .artcard img {
+  display: grid;
+  width: 300px;
+  height: 300px;
   max-width: 100%;
   max-height: 100%;
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Artlist from "../components/Artlist";
+import "../styles/Gallery.css";
 
 export default function Gallery() {
   const [art, setArt] = useState([]);
