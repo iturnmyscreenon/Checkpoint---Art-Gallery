@@ -31,7 +31,6 @@ export default function Navbar() {
         <Link to="/gallery"> Gallery </Link>
         <Link to="/about"> About </Link>
         <Link to="/contact"> Contact </Link>
-
         <button className="navbtn" type="button" onClick={toggleLinks}>
           <ReorderIcon />
         </button>

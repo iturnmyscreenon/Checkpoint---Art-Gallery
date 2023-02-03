@@ -8,6 +8,12 @@ const artControllers = require("./controllers/artControllers");
 
 const contactControllers = require("./controllers/contactControllers");
 
+const userControllers = require("./controllers/userControllers");
+
+router.get("/user", userControllers.browse);
+router.get("/user/:id", userControllers.read);
+router.post("/user", userControllers.add);
+
 router.get("/contact", contactControllers.browse);
 router.get("/contact/:id", contactControllers.read);
 router.post(
