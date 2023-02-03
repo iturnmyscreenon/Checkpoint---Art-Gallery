@@ -1,3 +1,16 @@
+CREATE TABLE contact (
+    name VARCHAR(20) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    message VARCHAR (255) NOT NULL
+) engine = InnoDB DEFAULT charset = utf8;
+
+INSERT INTO contact (name, email, message)
+VALUES (
+    'iturnmyscreenon',
+    'benoit.galey@gmail.com',
+    'test'
+);
+
 CREATE TABLE user (
     id int(11) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
     username VARCHAR(20) NOT NULL,

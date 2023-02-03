@@ -23,8 +23,21 @@ export default function Artdetail() {
   return (
     <Card>
       <div className="artsize">
-        <h1>Painting</h1>
-        <ArtCard art={art} full />
+        <Card.Title
+          style={{
+            fontSize: "30px",
+            fontStyle: "bold",
+            fontFamily: "georgia, serif",
+            color: "black",
+            textAlign: "center",
+          }}
+        >
+          {" "}
+          Painting
+        </Card.Title>
+        <Card.Body style={{ display: "flex", justifyContent: "center" }}>
+          <ArtCard art={art} full />
+        </Card.Body>
       </div>
     </Card>
   );
