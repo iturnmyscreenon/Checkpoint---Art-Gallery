@@ -7,6 +7,7 @@ import Gallery from "./pages/Gallery";
 import Artdetail from "./pages/Artdetail";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Inscriptionpage from "./pages/Inscriptionpage";
 import "./styles/App.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/inscription" element={<Inscriptionpage />} />
         <Route path="/gallery/artcard/:id" element={<Artdetail />} />
         <Route path="*" element={<h1>404: Not Found</h1>} />
       </Routes>

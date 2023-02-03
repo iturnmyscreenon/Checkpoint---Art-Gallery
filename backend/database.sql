@@ -16,7 +16,7 @@ CREATE TABLE user (
     username VARCHAR(20) NOT NULL,
     email VARCHAR(150) NOT NULL UNIQUE,
     password VARCHAR (255) NOT NULL,
-    role varchar(200) NOT NULL
+    role varchar(200) DEFAULT 'user'
 ) engine = InnoDB DEFAULT charset = utf8;
 
 INSERT INTO user (id, username, email, password, role)
