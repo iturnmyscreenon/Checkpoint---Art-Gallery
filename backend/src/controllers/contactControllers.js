@@ -48,12 +48,12 @@ const edit = (req, res) => {
     });
 };
 
-const add = (req, res) => {
+const add = (req, res, next) => {
   const contact = req.body;
   models.contact
     .insert(contact)
-    .then(([result]) => {
-      res.location(`/contact/${result.insertId}`).sendStatus(201);
+    .then(() => {
+      next();
     })
     .catch((err) => {
       console.error(err);
