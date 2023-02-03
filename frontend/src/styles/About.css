@@ -22,10 +22,6 @@
   margin-top: 50px;
 }
 
-.aboutBottom p {
-  width: 1200px;
-}
-
 .about .aboutBottom h1 {
   font-weight: 400;
   font-size: 70px;
@@ -35,3 +31,18 @@
   justify-content: center;
   transform: translateY(-40px);
 }
+
+@media screen and (max-width: 650px) {
+  .about .aboutBottom h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .about .aboutBottom p {
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+  }
+}
+  
