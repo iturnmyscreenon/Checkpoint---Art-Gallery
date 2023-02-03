@@ -2,7 +2,7 @@ const nodemailer = require("nodemailer");
 require("dotenv").config();
 
 const sendContactMail = (req, res) => {
-  const { name, surname, phone, email, message } = req.body;
+  const { name, email, message } = req.body;
 
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_SENDIN,
@@ -18,7 +18,7 @@ const sendContactMail = (req, res) => {
     from: email,
     to: process.env.SMTP_SENDIN_USER,
     subject: "Contact",
-    text: `Name: ${name} ${surname} \n Phone: ${phone} \n Email: ${email} \n Message: ${message}`,
+    text: `Name: ${name} \n Email: ${email} \n Message: ${message}`,
   };
 
   transporter
