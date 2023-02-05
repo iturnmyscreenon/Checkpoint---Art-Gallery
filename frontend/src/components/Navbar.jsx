@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // eslint-disable-next-line import/no-unresolved
 import { useAutoAnimate } from "@formkit/auto-animate/react";
+import { BiUserCircle } from "react-icons/bi";
 import ReorderIcon from "@mui/icons-material/Reorder";
 import logoskonbarb from "../assets/logoskonbarb.png";
 import "../styles/Navbar.css";
@@ -24,6 +25,9 @@ export default function Navbar() {
           <Link to="/gallery"> Gallery </Link>
           <Link to="/about"> About </Link>
           <Link to="/contact"> Contact </Link>
+          <Link to="/inscription">
+            <BiUserCircle className="personIcon" />
+          </Link>
         </div>
       </div>
       <div ref={parent} className="navright">
@@ -31,6 +35,10 @@ export default function Navbar() {
         <Link to="/gallery"> Gallery </Link>
         <Link to="/about"> About </Link>
         <Link to="/contact"> Contact </Link>
+        <Link className="sukabenoitpidor" to="/inscription">
+          <BiUserCircle className="personIcon2" />
+        </Link>
+
         <button className="navbtn" type="button" onClick={toggleLinks}>
           <ReorderIcon />
         </button>
