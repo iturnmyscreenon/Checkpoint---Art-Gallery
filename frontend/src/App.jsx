@@ -7,6 +7,7 @@ import Gallery from "./pages/Gallery";
 import Artdetail from "./pages/Artdetail";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Login from "./pages/Login";
 import Inscriptionpage from "./pages/Inscriptionpage";
 import "./styles/App.css";
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/inscription" element={<Inscriptionpage />} />
         <Route path="/gallery/artcard/:id" element={<Artdetail />} />
+        <Route path="/connexion" element={<Login />} />
         <Route path="*" element={<h1>404: Not Found</h1>} />
       </Routes>
       <Footer />

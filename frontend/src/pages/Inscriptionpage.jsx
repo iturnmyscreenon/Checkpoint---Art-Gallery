@@ -54,7 +54,7 @@ export default function Inscriptionpage() {
     <form onSubmit={(e) => handleSubmit(e)}>
       {messageError && <p className="error">{messageError}</p>}
       <MDBContainer fluid>
-        <MDBCard className="text-black m-5" style={{ borderRadius: "25px" }}>
+        <MDBCard className="text-black" style={{ borderRadius: "5px" }}>
           <MDBCardBody>
             <MDBRow>
               <MDBCol
@@ -125,7 +125,6 @@ export default function Inscriptionpage() {
                   src={SignUpForm}
                   style={{
                     backgroundPosition: "cover",
-                    height: "122%",
                     borderRadius: "25px",
                   }}
                   fluid

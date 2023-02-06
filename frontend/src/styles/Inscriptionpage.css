@@ -1,5 +1,8 @@
 .form {
-  height: 75vh;
+  width: 50%;
+  overflow: scroll;
+  flex:1;
+
 }
 
 .btn-primary {
