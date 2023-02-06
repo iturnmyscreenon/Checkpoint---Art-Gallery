@@ -1,3 +1,15 @@
 .form {
-  height: 75vh;
+  width: 50%;
+  overflow: scroll;
+  flex:1;
+
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #aa6c10;
+  background-color: cutom-color;
+  border-color: #181717;
+  border-color: cutom-cor;
+  text-align: center;
 }

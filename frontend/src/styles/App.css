@@ -5,3 +5,12 @@
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif0;
 }
+
+html, body, #root {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
